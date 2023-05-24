@@ -1,22 +1,11 @@
 # devop-netology189
-
-*.a
-Но отслеживать файл lib.a, даже если он подпадает под исключение выше
-**/.terraform/*
-*.tfstate
-*.tfstate.*
-crash.log
-crash.*.log
-*.tfvars
-*.tfvars.json
-*_override.tf
-*_override.tf.json
-Пустые строки, а также строки, начинающиеся с #, игнорируются
-Две звёздочки указывают на вложенные директории: a/**/z
-соответствует a/z, a/b/z, a/b/c/z 
-# 
-
-
+Игнорировать все файлы в директории .terraform
+Игнорировать все файлы оканчивающиеся на .tfstate и содержащие .tfstate.
+Игнорировать файл crash.log
+Игнорировать файлы оканчивающиеся на .tfvars
+Игнорировать файлы override.tf, override.tf и оканчивающиеся на _override.tf и _override.tf.json
+Игнорировать файлы .terraformrc и terraform.rc
+Игнорировать каталог .idea
 
 
 
